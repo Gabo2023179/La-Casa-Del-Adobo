@@ -1,0 +1,209 @@
+/* src/components/css/Servicios.css */
+
+.servicios-container {
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #333333;
+}
+
+.servicios-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.servicios-intro h2 {
+  color: #b00000;
+  font-size: 3em;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.servicios-intro h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #b00000;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.servicios-intro p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555555;
+}
+
+.servicios-descripcion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.servicio-item {
+  flex: 1 1 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servicio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.servicio-imagen {
+  width: 90%; /* Reduce el ancho de la imagen al 80% del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+  max-height: 500px; /* Establece una altura máxima para asegurar que no sean demasiado grandes */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.servicio-texto {
+  text-align: center;
+}
+
+.servicio-icon {
+  color: #b00000;
+  font-size: 2em; /* Reduce el tamaño del ícono */
+  margin-bottom: 10px;
+}
+
+.servicio-item h3 {
+  color: #2c3e50;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.servicio-item p {
+  color: #555555;
+  font-size: 1em;
+}
+
+.servicios-formulario {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.servicios-formulario h3 {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.servicios-formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #b00000;
+  box-shadow: 0 0 5px rgba(176, 0, 0, 0.5);
+}
+
+.submit-button {
+  align-self: center;
+  background-color: #b00000;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #8b0000;
+  transform: translateY(-3px);
+}
+
+.success-message {
+  text-align: center;
+  color: #28a745;
+  font-size: 1.2em;
+}
+
+.error-message {
+  text-align: center;
+  color: #dc3545;
+  font-size: 1em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .servicios-container {
+    padding: 20px 10px;
+  }
+
+  .servicios-intro h2 {
+    font-size: 2.5em;
+  }
+
+  .servicios-intro p {
+    font-size: 1em;
+  }
+
+  .servicios-descripcion {
+    gap: 20px;
+  }
+
+  .servicio-item {
+    flex: 1 1 100%;
+  }
+
+  .servicio-imagen {
+    max-height: 130px; /* Reduce aún más la altura máxima en pantallas pequeñas */
+  }
+
+  .servicio-icon {
+    font-size: 1.8em;
+  }
+
+  .servicios-formulario h3 {
+    font-size: 1.8em;
+  }
+
+  .submit-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}

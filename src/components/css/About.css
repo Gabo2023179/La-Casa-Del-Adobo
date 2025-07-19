@@ -1,0 +1,256 @@
+/* src/components/css/About.css */
+
+.about-container {
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #333333;
+}
+
+.about-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-intro h2 {
+  color: #b00000;
+  font-size: 3em;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.about-intro h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #b00000;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.about-intro p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555555;
+}
+
+.about-gallery {
+  margin-bottom: 50px;
+}
+
+.about-gallery h3 {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Puedes ajustar el minmax según necesites */
+  gap: 15px; /* Ajusta el espacio entre imágenes */
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px; /* Aumenta la altura de las imágenes */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-details {
+  margin-bottom: 50px;
+}
+
+.about-details h3 {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.detail-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.detail-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.detail-item h4 {
+  color: #b00000;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.detail-item p {
+  margin: 0;
+  color: #555555;
+}
+
+.detail-item a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.detail-item a:hover {
+  text-decoration: underline;
+}
+
+.about-map {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.about-map h3 {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.map-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Espacio entre el botón y la dirección */
+}
+
+.map-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #4285F4; /* Color de Google */
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.map-button:hover {
+  background-color: #357ae8;
+  transform: translateY(-3px);
+}
+
+.map-button i {
+  font-size: 1.5em;
+}
+
+.address-text {
+  font-size: 1.2em;
+  color: #555555;
+}
+
+.about-contact {
+  margin-bottom: 50px;
+}
+
+.about-contact h3 {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1em;
+  color: #555555;
+  transition: color 0.3s;
+}
+
+.contact-item:hover {
+  color: #b00000;
+}
+
+.contact-item i {
+  color: #b00000;
+  font-size: 1.5em;
+}
+
+.contact-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px 10px;
+  }
+
+  .about-intro h2 {
+    font-size: 2.5em;
+  }
+
+  .about-intro p {
+    font-size: 1em;
+  }
+
+  .about-gallery h3,
+  .about-details h3,
+  .about-map h3,
+  .about-contact h3 {
+    font-size: 1.8em;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta para pantallas pequeñas */
+    gap: 10px; /* Reduce el espacio entre imágenes */
+  }
+
+  .gallery img {
+    height: 200px; /* Aumenta la altura en pantallas pequeñas */
+  }
+
+  .detail-item h4 {
+    font-size: 1.3em;
+  }
+
+  .map-button {
+    font-size: 1em;
+    padding: 10px 16px;
+  }
+
+  .map-button i {
+    font-size: 1.2em;
+  }
+}

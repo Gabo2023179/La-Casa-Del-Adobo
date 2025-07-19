@@ -1,0 +1,145 @@
+/* src/components/css/VerMensajes.css */
+
+.vermensajes-container {
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #333333;
+}
+
+.seccion-mensajes,
+.seccion-cotizaciones {
+  margin-bottom: 50px;
+}
+
+.seccion-mensajes h2,
+.seccion-cotizaciones h2 {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.seccion-mensajes h2::after,
+.seccion-cotizaciones h2::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: #b00000;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.mensajes-list,
+.cotizaciones-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mensaje-item,
+.cotizacion-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mensaje-item:hover,
+.cotizacion-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mensaje-header,
+.cotizacion-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.mensaje-icon,
+.cotizacion-icon {
+  color: #b00000;
+  font-size: 1.5em;
+}
+
+.mensaje-item h4,
+.cotizacion-item h4 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.mensaje-email p,
+.cotizacion-email p,
+.cotizacion-telefono p,
+.cotizacion-tipoEvento p,
+.cotizacion-fecha p,
+.cotizacion-asistentes p,
+.cotizacion-serviciosAdicionales p,
+.cotizacion-mensaje p,
+.cotizacion-timestamp p {
+  margin: 0;
+  color: #555555;
+}
+
+.loading,
+.error-message {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.loading {
+  color: #2980b9;
+}
+
+.error-message {
+  color: #dc3545;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .vermensajes-container {
+    padding: 20px 10px;
+  }
+
+  .seccion-mensajes h2,
+  .seccion-cotizaciones h2 {
+    font-size: 2em;
+  }
+
+  .mensajes-list,
+  .cotizaciones-list {
+    gap: 15px;
+  }
+
+  .mensaje-icon,
+  .cotizacion-icon {
+    font-size: 1.3em;
+  }
+
+  .mensaje-item h4,
+  .cotizacion-item h4 {
+    font-size: 1.3em;
+  }
+
+  .mensaje-email p,
+  .cotizacion-email p,
+  .cotizacion-telefono p,
+  .cotizacion-tipoEvento p,
+  .cotizacion-fecha p,
+  .cotizacion-asistentes p,
+  .cotizacion-serviciosAdicionales p,
+  .cotizacion-mensaje p,
+  .cotizacion-timestamp p {
+    font-size: 0.95em;
+  }
+}

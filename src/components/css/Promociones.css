@@ -1,0 +1,205 @@
+/* src/components/css/Promociones.css */
+
+/* Estilos generales de la sección de promociones */
+.promociones-container {
+  width: 100%;
+  padding: 10px 0; /* Reducir padding para disminuir espacio */
+  box-sizing: border-box;
+  background-color: #f9f9f9; /* Opcional: Fondo para diferenciar la sección */
+}
+
+/* Título de promociones */
+.promociones-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px; /* Reducir espacio entre título y carrusel */
+  color: #ff0000;
+}
+
+/* Carrusel */
+.promociones-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Ancho completo de la pantalla */
+  margin: 0 auto; /* Centrar el carrusel */
+  box-sizing: border-box;
+}
+
+/* Contenedor del carrusel */
+.promociones-carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+/* Elemento individual del carrusel */
+.promociones-promotion-item {
+  flex: 0 0 100%; /* Ocupa el 100% del ancho del contenedor */
+  display: flex;
+  flex-direction: column; /* Alinear elementos en columna */
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Eliminar padding para no crear márgenes */
+  box-sizing: border-box;
+  position: relative; /* Para posicionamiento relativo de los detalles */
+}
+
+/* Imágenes del carrusel */
+.promociones-promotion-item img {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: auto; /* Altura ajustable según la imagen */
+  object-fit: cover; /* Cubre el contenedor sin distorsionar */
+  display: block;
+  border-radius: 8px; /* Opcional: Esquinas redondeadas */
+}
+
+/* Detalles de la promoción */
+.promociones-promotion-details {
+  text-align: center;
+  padding: 15px; /* Espacio interno */
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente para mejorar legibilidad */
+  width: 90%; /* Ancho casi completo */
+  max-width: 400px; /* Ancho máximo */
+  margin-top: -60px; /* Posicionar los detalles sobre la imagen */
+  border-radius: 8px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+  z-index: 1; /* Asegurar que los detalles estén por encima de la imagen */
+}
+
+/* Detalles de la promoción */
+.promociones-promotion-details h4 {
+  margin: 10px 0;
+  color: #b00000;
+}
+
+.promociones-promotion-details p {
+  margin: 5px 0;
+  color: #555555;
+}
+
+.promociones-promotion-details .promociones-button {
+  margin-top: 10px;
+  background-color: #b00000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.promociones-promotion-details .promociones-button svg {
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.promociones-promotion-details .promociones-button:hover {
+  background-color: #8a0000;
+  transform: scale(1.05);
+}
+
+/* Botones de navegación (flechas) */
+.promociones-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para mejor visibilidad */
+  color: #b00000; /* Rojo oscuro para el color de la flecha */
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem; /* Ajuste de padding */
+  font-size: 2em;
+  z-index: 2; /* Asegurar que los botones estén por encima de las imágenes */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones para hover */
+  border-radius: 50%; /* Bordes redondeados */
+}
+
+.promociones-arrow-left {
+  left: 20px; /* Posición a la izquierda con margen */
+}
+
+.promociones-arrow-right {
+  right: 20px; /* Posición a la derecha con margen */
+}
+
+.promociones-arrow:hover {
+  background: rgba(255, 255, 255, 1); /* Fondo sólido en hover */
+  color: #8a0000; /* Cambia a un tono más oscuro en hover */
+  transform: translateY(-50%) scale(1.1); /* Aumenta tamaño en hover */
+}
+
+/* Media Queries para Dispositivos Móviles */
+@media (max-width: 768px) {
+  .promociones-title {
+    font-size: 1.5em;
+    margin-bottom: 5px; /* Reducir aún más el espacio */
+  }
+
+  .promociones-carousel {
+    padding: 0 20px; /* Reducir padding en móviles */
+  }
+
+  .promociones-arrow {
+    padding: 0.3rem 0.6rem; /* Reducir el tamaño del botón en dispositivos móviles */
+    font-size: 1.5em; /* Tamaño de flecha más pequeño en móviles */
+  }
+
+  .promociones-arrow-left {
+    left: 10px; /* Ajustar posición */
+  }
+
+  .promociones-arrow-right {
+    right: 10px; /* Ajustar posición */
+  }
+
+  .promociones-promotion-details {
+    padding: 10px;
+    margin-top: -40px; /* Reducir el desplazamiento en móviles */
+    width: 95%; /* Aumentar ancho para móviles */
+    max-width: none; /* Eliminar ancho máximo */
+  }
+
+  .promociones-promotion-details h4 {
+    font-size: 1.2em;
+  }
+
+  .promociones-promotion-details p {
+    font-size: 0.9em;
+  }
+
+  .promociones-promotion-details .promociones-button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+
+  .promociones-promotion-details .promociones-button svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Ajuste de imagen para móviles */
+  .promociones-promotion-item img {
+    width: 100%;
+    height: auto; /* Mantener altura automática */
+    object-fit: cover;
+  }
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.promociones-carousel {
+  animation: fadeIn 1s ease;
+}

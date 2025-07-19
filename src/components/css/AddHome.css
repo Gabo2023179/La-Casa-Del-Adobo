@@ -1,0 +1,69 @@
+/* AddHome.css */
+.add-home-form, .edit-home-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-home-form input,
+.add-home-form textarea,
+.edit-home-form input,
+.edit-home-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.add-home-form button,
+.edit-home-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-home-form button:hover,
+.edit-home-form button:hover {
+  background-color: #0056b3;
+}
+
+.home-posts-list {
+  margin-top: 20px;
+}
+
+.home-post-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-post-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.home-post-item h4 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.home-post-item p {
+  margin: 5px 0 10px;
+  font-size: 1rem;
+}
+
+.home-post-item button {
+  margin-right: 10px;
+}

@@ -1,0 +1,69 @@
+/* src/components/css/Home.css */
+
+/* Estilos generales de la página */
+.home-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Carrusel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto; /* Altura dinámica */
+  margin: 0;
+  transition: height 0.5s ease-in-out; /* Transición suave para la altura */
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.post-item {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-item img {
+  width: 100%; /* Cubrir todo el ancho del contenedor */
+  height: auto; /* Altura basada en la imagen */
+  object-fit: cover;
+  border-radius: 0; /* Sin esquinas redondeadas para cubrir toda el área */
+}
+
+/* Eliminación de los botones de navegación */
+.arrow {
+  display: none;
+}
+
+/* Media Queries para Dispositivos Móviles */
+@media (max-width: 768px) {
+  .carousel {
+    /* La altura ya es dinámica, no es necesario reducirla */
+  }
+
+  .post-item img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

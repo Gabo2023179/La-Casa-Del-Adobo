@@ -1,0 +1,132 @@
+/* FAQs.css */
+
+.faqs-section {
+  padding: 40px;
+  background-color: #fff5f5; /* Fondo blanco suave */
+  color: #333; /* Texto oscuro */
+  font-family: 'Arial', sans-serif; /* Tipografía clara */
+}
+
+.faqs-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #b00000; /* Rojo oscuro */
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px; /* Esquinas redondeadas */
+  border: 1px solid #b00000; /* Borde rojo oscuro */
+}
+
+.faq-question {
+  font-size: 1.5em;
+  color: #b00000; /* Rojo oscuro */
+}
+
+.faq-answer {
+  margin-top: 10px;
+  color: #333; /* Texto oscuro */
+}
+
+.comment-section {
+  margin-top: 40px;
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 20px;
+  border-radius: 10px; /* Esquinas redondeadas */
+  border: 1px solid #b00000; /* Borde rojo oscuro */
+}
+
+.comment-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #b00000; /* Rojo oscuro */
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-input, .reply-input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #b00000; /* Borde rojo oscuro */
+  background-color: #fff5f5; /* Fondo blanco suave */
+  color: #333; /* Texto oscuro */
+}
+
+.comment-textarea, .reply-textarea {
+  height: 80px;
+  border-radius: 5px;
+  border: 1px solid #b00000; /* Borde rojo oscuro */
+  margin: 10px 0;
+  background-color: #fff5f5; /* Fondo blanco suave */
+  color: #333; /* Texto oscuro */
+}
+
+.submit-button {
+  background-color: #b00000; /* Botón rojo oscuro */
+  color: #fff5f5; /* Texto blanco suave */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #8a0000; /* Botón más oscuro en hover */
+}
+
+.comments-list {
+  margin-top: 20px;
+}
+
+.comment-item {
+  background-color: #fff5f5; /* Fondo blanco suave */
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+  border: 1px solid #b00000; /* Borde rojo oscuro */
+}
+
+.comment-author {
+  font-weight: bold;
+  color: #b00000; /* Rojo oscuro */
+}
+
+.reply-section {
+  margin-top: 10px;
+}
+
+.reply-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.replies-list {
+  margin-top: 10px;
+}
+
+.reply-item {
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: 1px solid #b00000; /* Borde rojo oscuro */
+}
+
+.reply-author {
+  font-weight: bold;
+  color: #b00000; /* Rojo oscuro */
+}

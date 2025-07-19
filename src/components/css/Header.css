@@ -1,0 +1,77 @@
+/* src/components/css/Header.css */
+
+.header {
+  background-color: #b00000; /* Fondo rojo */
+  padding: 20px 20px; /* Reducir el padding */
+}
+
+.header-container {
+  width: 100%; /* Ocupa todo el ancho de la página */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Carrito a la derecha y logo en el centro */
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.header-logo-link {
+  position: absolute;
+  left: 50%; /* Centro horizontal */
+  transform: translateX(-50%); /* Ajustar posición al centro */
+}
+
+.header-logo {
+  height: 65px; /* Tamaño más grande del logotipo */
+  transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+  transform: scale(1.1); /* Efecto de ampliación al pasar el cursor */
+}
+
+/* Botón de carrito */
+.header-cart-button {
+  display: flex;
+  align-items: center; /* Centrar ícono y texto verticalmente */
+  justify-content: center; /* Centrar contenido dentro del botón */
+  background-color: #fff5f5; /* Fondo blanco suave */
+  color: #b00000; /* Texto rojo oscuro */
+  font-size: 1.2em; /* Fuente más pequeña */
+  padding: 5px 8px; /* Reducir padding */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Transición suave para todos los cambios */
+}
+
+.header-cart-button:hover {
+  background-color: #b00000; /* Fondo rojo oscuro */
+  color: #fff5f5; /* Texto blanco suave */
+  transform: scale(1.05); /* Efecto de ampliación leve */
+}
+
+.header-cart-icon {
+  font-size: 1.2em; /* Tamaño del ícono más pequeño */
+  margin-right: 5px; /* Separación del texto */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .header {
+      padding: 10px 10px; /* Reducir padding */
+  }
+
+  .header-logo {
+      height: 50px; /* Reducir tamaño del logo */
+  }
+
+  .header-cart-button {
+      font-size: 1em; /* Reducir tamaño de fuente */
+      padding: 5px 10px; /* Ajustar padding */
+  }
+
+  .header-cart-icon {
+      font-size: 1em; /* Reducir tamaño del ícono */
+      margin-right: 3px; /* Reducir margen */
+  }
+}

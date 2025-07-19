@@ -1,0 +1,36 @@
+/* AddPromociones.css */
+.add-promotion-form, .edit-promotion-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-promotion-form input,
+.add-promotion-form textarea,
+.edit-promotion-form input,
+.edit-promotion-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.add-promotion-form button,
+.edit-promotion-form button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-promotion-form button:hover,
+.edit-promotion-form button:hover {
+  background-color: #218838;
+}
